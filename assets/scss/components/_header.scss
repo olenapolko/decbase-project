@@ -129,9 +129,9 @@
   }
 
   @media (max-width: $md) {
-      &__hamburger,
-      &__toggle{
-          display: block;
-      }
+    &__hamburger,
+    &__toggle{
+        display: block;
+    }
   }
 }

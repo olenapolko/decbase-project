@@ -1583,10 +1583,6 @@ body {
         flex-basis: unset;
   }
 }
-.footer__logo {
-  display: inline-block;
-  margin-bottom: 20px;
-}
 .footer__nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1633,10 +1629,6 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
   }
-}
-.footer__logo {
-  width: 18px;
-  height: 18px;
 }
 .footer__socials-link {
   width: 40px;
