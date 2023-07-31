@@ -1,0 +1,137 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  padding-top: rem(80);
+  background-color: $white-color;
+  color: $main-text-color;
+  transition: padding .2s ease;
+
+  &__container {
+    @include flex-between-center;
+  }
+
+  &__logo {
+    cursor: pointer;
+  }
+
+  &__progress-bar {
+    margin-top: rem(36);
+    height: 5px;
+    transition: width .2ms ease;
+    border-radius: 2px;
+    background: linear-gradient(to right, $first-accent-color 30%, $bg-green-color 100%);
+  }
+
+  &__nav {
+    justify-content: flex-end;
+    @include adaptive-value('gap', 40, 5, 1);
+  }
+
+  &__actions {
+    @include flex-align-center;
+    font-weight: 600;
+
+    @media (max-width: $md) {
+      display: none;
+    }
+
+    .header__signup {
+      white-space: nowrap;
+      padding: rem(10) rem(20);
+      border-radius: 15px 0;
+      background-color: $second-accent-color;
+      color: $white-color;
+      transition: all .3s ease-in-out;
+
+      &:hover {
+        background-color: #dc9261;
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+.nav{
+  @include flex-align-center;
+  
+    &__list{
+        @include flex-align-center;
+        gap: 0 rem(24);
+        font-weight: 600;
+
+        @media (max-width: $md) {
+          display: none;
+        }
+    }
+
+    &__link{
+      display: block;
+      padding: rem(10) rem(15);
+      border: 5px solid transparent;
+      border-radius: 20px;
+      text-transform: uppercase;
+      transition: all .3s linear;
+      font-size: rem(16);
+
+      &:hover {
+          border-color: $first-accent-color;
+          color: $first-accent-color;
+      }
+    }
+    
+    &__hamburger{
+      position: relative;
+      width: 20px;
+      height: 4px;
+      background: $grey-color;
+      cursor: pointer;
+      transition: 0.3s;
+      z-index: 3;
+    }
+
+  &__hamburger:before,
+  &__hamburger:after{
+      content: "";
+      position: absolute;
+      height: 4px;
+      right: 0;
+      background: $grey-color;
+      transition: 0.3s;
+  }
+
+  &__hamburger:before{
+      top: -10px;
+      width: 26px;
+  }
+
+  &__hamburger:after{
+      top: 10px;
+      width: 13px;
+  }
+
+  &__toggle{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 30px;
+      height: 100%;
+      cursor: pointer;
+      opacity: 0;
+      z-index: 6;
+  }
+
+  &__hamburger,
+  &__toggle{
+      display: none;
+  }
+
+  @media (max-width: $md) {
+      &__hamburger,
+      &__toggle{
+          display: block;
+      }
+  }
+}

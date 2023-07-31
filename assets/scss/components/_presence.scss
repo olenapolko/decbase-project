@@ -1,0 +1,45 @@
+.presence {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+  
+    &__content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(1);
+      transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
+      width: 571px;
+      height: 226px;
+      border: 1px solid $bg-green-color;
+      border-radius: 5px;
+      color: $first-accent-color;
+      font-weight: 700;
+      background-color: $modal-green-color;
+      padding: rem(40);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      pointer-events: visible;
+    }
+  
+    &__btn {
+      background-color: $first-accent-color;
+      color: $white-color;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all .3 ease;
+      width: 146px;
+      height: 47px;
+
+      &:hover{
+        opacity: 0.9;
+      }
+    }
+  }

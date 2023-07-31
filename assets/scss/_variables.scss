@@ -1,0 +1,45 @@
+// Colors
+$title-color: #212121;
+$main-text-color: #646464;
+$first-accent-color: #37806b;
+$second-accent-color: #caa892;
+$socials-grey-color: #d5d5d5;
+$bg-grey-color: #f8f8f8;
+$bg-green-color: #a6d8ca;
+$border-brown-color: #B0855B;
+$modal-green-color: #c8ded8;
+$error-color: #a70c0c;
+$white-color: #fff;
+$grey-color: #696969;
+$orange-color: rgb(246, 163, 9);
+$yellow-color: rgb(219, 194, 5);
+$emi: #ced4da;
+
+// Container
+$minWidth: 420;
+$maxWidth: 1440;
+$maxWidthContainer: 1350;
+
+// Fonts
+$main-font-name: 'Open Sans', sans-serif;
+$title-font-name: 'Poppins', sans-serif;
+$placeholder-font-name: 'Raleway', sans-serif;
+$quotes-font-name: 'Basic Sans SF', sans-serif;
+
+$base-font-size: 18px;
+$base-line-height: 155%;
+$base-font-weight: 400;
+
+$title-font-size: 48px;
+$title-line-height: 118%;
+$title-font-weight: 500;
+
+$subtitle-font-size: 20px;
+$subtitle-line-height: 150%;
+$subtitle-font-weight: 600;
+
+// Break-points
+$lg: $maxWidthContainer + 12px;
+$md: 991.98px;
+$sm: 767.98px;
+$xs: 413,98px;

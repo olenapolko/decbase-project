@@ -1,0 +1,51 @@
+.designs {
+    @include adaptive-value('padding-top', 180, 40, 1);
+    @include adaptive-value('padding-bottom', 140, 40, 1);
+  
+    &__title,
+    &__subtitle {
+      text-align: center;
+    }
+  
+    &__subtitle {
+      margin-bottom: 50px;
+    }
+  
+    &__grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      justify-items: center;
+      gap: 2rem;
+
+      @media (max-width: 1210px) {
+          grid-template-columns: repeat(2, 1fr);
+      }
+      @media (max-width: $sm) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  
+    &__work {
+      max-width: 320px;
+      padding: 10px;
+      transition: scale .3s ease-in;
+  
+      &:hover {
+        scale: 1.02;
+      }
+    }
+  
+    &__img {
+      margin-bottom: rem(27);
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      @include rounded-corners(50);
+    }
+
+    &__error-container{
+      text-align: center;
+      color: $error-color;
+    }
+}
+  

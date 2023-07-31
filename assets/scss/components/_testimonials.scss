@@ -1,0 +1,121 @@
+.testimonials {
+    @include adaptive-value("padding-top", 130, 40, 1);
+    @include adaptive-value("padding-bottom", 245, 40, 1);
+
+    &__titles{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__buttons {
+      width: rem(110);
+      font-weight: 700;
+      font-size: rem(20);
+      text-align: center;
+      vertical-align: middle;
+      display: flex;
+      justify-content: space-between;
+      align-self: flex-end;
+      margin-right: rem(150);
+    }
+
+    &__btn {
+      width: 30px;
+      height: 30px;
+      background-color: $first-accent-color;
+      box-shadow: -1px 3px 10px rgba(0, 0, 0, 0.3);
+      color: $white-color;
+      border-radius: 50%;
+      border: rem(2) solid transparent;
+      transition: all 0.3s;
+      &:hover {
+        background-color: $white-color;
+        color: $first-accent-color;
+      }
+    }
+
+    &__item {
+      @include rounded-corners(70);
+      min-height: rem(226);
+      padding: rem(40) rem(42) rem(60) rem(95);
+      background: $white-color;
+      color: $main-text-color;
+      box-shadow: 7px 7px 30px 5px rgba(66, 96, 84, 0.15);
+      position: relative;
+    }
+
+    &__img {
+      position: absolute;
+      left: rem(-60);
+      top: rem(40);
+      width: rem(130);
+      height: rem(130);
+      @include rounded-corners(40);
+      object-fit: cover;
+    }
+
+    &__user-info {
+      @include flex-align-center;
+      white-space: nowrap;
+    }
+
+    &__name {
+      color: $title-color;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: rem(33);
+      margin-top: rem(3);
+    }
+
+    &__position {
+      font-size: rem(16);
+      line-height: rem(22);
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    &__marks {
+      flex: 1 1 auto;
+      align-self: flex-end;
+      font-family: $quotes-font-name;
+      font-weight: 700;
+      color: $second-accent-color;
+      font-size: rem(96);
+      text-align: end;
+    }
+
+    &__text {
+      margin-top: rem(8);
+    }
+  }
+
+.swiper {
+  padding-top: rem(85);
+  width: 100%;
+  margin: 0 auto;
+  height: rem(460);
+  position: relative;
+
+  .swiper-button-prev,
+  .swiper-button-next {
+      --swiper-navigation-size: 12px;
+      position: absolute;
+      top: rem(50);
+  }
+  .swiper-wrapper{
+    @include adaptive-value('margin-top', 85, 18, 1);
+  }
+
+  .swiper-button-next {
+      right: rem(20);
+  }
+  .swiper-button-prev {
+      left: auto;
+      right: rem(100);
+  }
+
+  .swiper-slide {
+      padding-left: 90px;
+  }
+}

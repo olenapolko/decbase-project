@@ -1,0 +1,88 @@
+@use "sass:math";
+
+@function em($px, $base-size: 18) {
+  $result: math.div($px, $base-size) + em;
+  @return $result;
+}
+
+@function rem($px, $root-size: 18) {
+  $result: math.div($px, $root-size) + rem;
+  @return $result;
+}
+
+@mixin media($point) {
+  @media screen and (max-width: map-get($break-points, $point)) {
+      @content;
+  }
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-between-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-align-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-justify-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin rounded-corners($borderRadius) {
+  border-radius: rem($borderRadius) rem(0);
+}
+
+@mixin shifted-border {
+  border: 2px solid $border-brown-color;
+  @include rounded-corners(130);
+
+  img {
+    display: block;
+    @include rounded-corners(130);
+    position: relative;
+
+    &.right-shift {
+      top: rem(35);
+      left: rem(35);
+    }
+
+    &.left-shift {
+      bottom: rem(35);
+      right: rem(35);
+    }
+  }
+}
+
+@mixin adaptive-value($property, $startSize, $minSize, $type) {
+    $addSize: $startSize - $minSize;
+  
+    @if $type==1 {
+      #{$property}: $startSize + px;
+  
+      @media (max-width: #{$maxWidthContainer + px}) {
+        #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 420px) / #{$maxWidthContainer - 420}));
+      }
+    }
+  
+    @else if $type==2 {
+      #{$property}: $startSize + px;
+  
+      @media (min-width: #{$maxWidthContainer + px}) {
+        #{$property}: calc(#{$minSize + px} #{$addSize} * ((100vw - 420px) / #{$maxWidth - 420}));
+      }
+    }
+  
+    @else {
+      #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 420px) / #{$maxWidth - 420}));
+    }
+}

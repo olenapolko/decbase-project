@@ -1,0 +1,122 @@
+.contact {
+    position: relative;
+    padding: 80px 0;
+
+    &__decoration{
+      position: absolute;
+      bottom: -60px;
+      left: 0;
+    }
+
+    &__subtitle,
+    &__text,
+    &__underline {
+      margin-bottom: 35px;
+    }
+  
+    &__title,
+    &__text{
+      text-align: center;
+    }
+
+    &__title{
+      text-transform: uppercase;
+    }
+  
+    &__underline {
+        display: block;
+        max-width: 461px; 
+        border-top: 1px solid #c4c4c4;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+  
+    &__form {
+      max-width: 770px;
+      margin: 0 auto;
+    }
+  
+    &__fieldset {
+      margin-bottom: 40px;
+      @include flex-justify-between;
+      gap: 40px 100px;
+
+      @media (max-width: $sm) {
+          flex-direction: column;
+          gap: 20px 100px;
+          margin-bottom: 40px;
+      }
+    }
+  
+    &__item {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    &__label {
+      font-family: 'Raleway';
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 140%;
+      color: $error-color;
+      opacity: 0;
+      transition: opacity .2s ease-in;
+    }
+  
+    &__input {
+      border: none;
+      outline: none;
+      padding: rem(16) rem(32);
+      border-radius: 20px 0px;
+      background-color: #eeeeee;
+      font-family: 'Raleway';
+      font-weight: 500;
+  
+      &:focus {
+        outline: 2px solid $first-accent-color;
+      }
+    }
+  
+    &__submit {
+      display: block;
+      margin: 60px auto 0;
+      width: 180px;
+      text-align: center;
+    }
+  }
+  
+  .congrats {
+    background: $first-accent-color;
+    z-index: 3;
+    display: none;
+    position: fixed;
+    inset: 0;
+  
+    &__title,
+    &__text {
+      text-align: center;
+    }
+  
+    &__title {
+      font-size: rem(60);
+      font-weight: 700;
+      margin-bottom: 2rem;
+      color: $orange-color;
+    }
+  
+    &__text {
+      font-size: rem(36);
+      max-width: 700px;
+      background: $yellow-color;
+      background-clip: text;
+      color: transparent;
+      line-height: 1.2;
+    }
+  }
+
+.grid {
+    display: grid;
+    place-content: center;
+}

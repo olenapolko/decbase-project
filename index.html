@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decbase</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9.1.1/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+  <div class="preloader">
+    <div class="preloader-container">
+      <div class="preloader-element"></div>
+      <div class="preloader-element"></div>
+      <div class="preloader-element"></div>
+      <div class="preloader-element"></div>
+      <div class="preloader-element"></div>
+      <div class="preloader-element"></div>
+      <div class="preloader-element"></div>
+    </div>
+  </div>
+  <div class="confetti-container">
+    <div class="confetti">
+      <i style="--speed: 10; --bg: yellow" class="square"></i>
+      <i style="--speed: 18; --bg: white" class="pentagram"></i>
+      <i style="--speed: 29; --bg: green" class="rectangle"></i>
+      <i style="--speed: 17; --bg: blue" class="hexagram"></i>
+      <i style="--speed: 33; --bg: red" class="pentagram"></i>
+      <i style="--speed: 26; --bg: yellow" class="dodecagram"></i>
+      <i style="--speed: 24; --bg: pink" class="wavy-line"> </i>
+      <i style="--speed: 5; --bg: blue" class="wavy-line"></i>
+      <i style="--speed: 40; --bg: white" class="square"></i>
+      <i style="--speed: 17; --bg: green" class="rectangle"></i>
+      <i style="--speed: 25; --bg: white" class="square"></i>
+      <i style="--speed: 18; --bg: green" class="rectangle"></i>
+      <i style="--speed: 15; --bg: yellow" class="wavy-line"> </i>
+      <i style="--speed: 32; --bg: yellow" class="pentagram"></i>
+      <i style="--speed: 25; --bg: white" class="square"></i>
+      <i style="--speed: 18; --bg: green" class="rectangle"></i>
+      <i style="--speed: 37; --bg: yellow" class="dodecagram"></i>
+      <i style="--speed: 23; --bg: pink" class="wavy-line"></i>
+      <i style="--speed: 37; --bg: red" class="dodecagram"></i>
+      <i style="--speed: 37; --bg: pink" class="wavy-line"></i>
+      <i style="--speed: 36; --bg: white" class="hexagram"></i>
+      <i style="--speed: 32; --bg: green" class="wavy-line"></i>
+      <i style="--speed: 32; --bg: yellow" class="pentagram"></i>
+      <i style="--speed: 29; --bg: white" class="square"></i>
+      <i style="--speed: 18; --bg: green" class="rectangle"></i>
+      <i style="--speed: 37; --bg: red" class="dodecagram"></i>
+      <i style="--speed: 23; --bg: pink" class="wavy-line"> </i>
+      <i style="--speed: 30; --bg: pink" class="rectangle"></i>
+      <i style="--speed: 30; --bg: red" class="square"></i>
+      <i style="--speed: 18; --bg: red" class="pentagram"></i>
+      <i style="--speed: 19; --bg: green" class="rectangle"></i>
+      <i style="--speed: 16; --bg: blue" class="hexagram"></i>
+      <i style="--speed: 23; --bg: red" class="pentagram"></i>
+      <i style="--speed: 34; --bg: yellow" class="dodecagram"></i>
+      <i style="--speed: 39; --bg: pink" class="wavy-line"></i>
+      <i style="--speed: 40; --bg: purple" class="square"></i>
+      <i style="--speed: 21; --bg: green" class="rectangle"></i>
+      <i style="--speed: 14; --bg: white" class="square"></i>
+      <i style="--speed: 38; --bg: green" class="rectangle"></i>
+      <i style="--speed: 19; --bg: red" class="dodecagram"></i>
+      <i style="--speed: 29; --bg: pink" class="wavy-line"> </i>
+      <i style="--speed: 21; --bg: white" class="hexagram"></i>
+      <i style="--speed: 17; --bg: purple" class="wavy-line"></i>
+      <i style="--speed: 32; --bg: yellow" class="pentagram"></i>
+      <i style="--speed: 23; --bg: white" class="square"></i>
+      <i style="--speed: 18; --bg: green" class="rectangle"></i>
+      <i style="--speed: 37; --bg: red" class="dodecagram"></i>
+      <i style="--speed: 48; --bg: pink" class="wavy-line"> </i>
+      <i style="--speed: 38; --bg: pink" class="rectangle"></i>
+      <i style="--speed: 13; --bg: red" class="pentagram"></i>
+      <i style="--speed: 49; --bg: yellow" class="dodecagram"></i>
+      <i style="--speed: 19; --bg: cyan" class="wavy-line"></i>
+      <i style="--speed: 15; --bg: steelblue" class="square"></i>
+      <i style="--speed: 10; --bg: yellow" class="square"></i>
+      <i style="--speed: 18; --bg: white" class="pentagram"></i>
+      <i style="--speed: 29; --bg: green" class="rectangle"></i>
+      <i style="--speed: 17; --bg: blue" class="hexagram"></i>
+      <i style="--speed: 33; --bg: red" class="pentagram"></i>
+      <i style="--speed: 26; --bg: yellow" class="dodecagram"></i>
+      <i style="--speed: 24; --bg: pink" class="wavy-line"> </i>
+      <i style="--speed: 5; --bg: white" class="wavy-line"></i>
+      <i style="--speed: 40; --bg: purple" class="square"></i>
+      <i style="--speed: 17; --bg: green" class="rectangle"></i>
+      <i style="--speed: 25; --bg: white" class="square"></i>
+      <i style="--speed: 18; --bg: green" class="rectangle"></i>
+      <i style="--speed: 15; --bg: cyan" class="wavy-line"> </i>
+      <i style="--speed: 32; --bg: yellow" class="pentagram"></i>
+      <i style="--speed: 45; --bg: white" class="square"></i>
+      <i style="--speed: 18; --bg: green" class="rectangle"></i>
+      <i style="--speed: 37; --bg: red" class="dodecagram"></i>
+      <i style="--speed: 23; --bg: pink" class="wavy-line"> </i>
+      <i style="--speed: 37; --bg: red" class="dodecagram"></i>
+      <i style="--speed: 37; --bg: pink" class="wavy-line"> </i>
+      <i style="--speed: 26; --bg: white" class="hexagram"></i>
+      <i style="--speed: 32; --bg: cyan" class="wavy-line"></i>
+      <i style="--speed: 32; --bg: yellow" class="pentagram"></i>
+      <i style="--speed: 45; --bg: white" class="square"></i>
+      <i style="--speed: 18; --bg: green" class="rectangle"></i>
+      <i style="--speed: 37; --bg: red" class="dodecagram"></i>
+      <i style="--speed: 23; --bg: pink" class="wavy-line"> </i>
+      <i style="--speed: 50; --bg: pink" class="rectangle"></i>
+      <i style="--speed: 30; --bg: red" class="square"></i>
+      <i style="--speed: 18; --bg: red" class="pentagram"></i>
+      <i style="--speed: 19; --bg: green" class="rectangle"></i>
+      <i style="--speed: 16; --bg: blue" class="hexagram"></i>
+      <i style="--speed: 23; --bg: red" class="pentagram"></i>
+      <i style="--speed: 33; --bg: yellow" class="dodecagram"></i>
+      <i style="--speed: 39; --bg: white" class="wavy-line"></i>
+      <i style="--speed: 40; --bg: orange" class="square"></i>
+      <i style="--speed: 21; --bg: green" class="rectangle"></i>
+      <i style="--speed: 14; --bg: white" class="square"></i>
+      <i style="--speed: 38; --bg: green" class="rectangle"></i>
+      <i style="--speed: 19; --bg: red" class="dodecagram"></i>
+      <i style="--speed: 29; --bg: pink" class="wavy-line"> </i>
+      <i style="--speed: 34; --bg: white" class="hexagram"></i>
+      <i style="--speed: 17; --bg: indigo" class="wavy-line"></i>
+      <i style="--speed: 32; --bg: yellow" class="pentagram"></i>
+      <i style="--speed: 23; --bg: white" class="square"></i>
+      <i style="--speed: 18; --bg: green" class="rectangle"></i>
+      <i style="--speed: 37; --bg: red" class="dodecagram"></i>
+      <i style="--speed: 48; --bg: pink" class="wavy-line"> </i>
+      <i style="--speed: 38; --bg: pink" class="rectangle"></i>
+      <i style="--speed: 13; --bg: red" class="pentagram"></i>
+      <i style="--speed: 49; --bg: yellow" class="dodecagram"></i>
+      <i style="--speed: 19; --bg: purple" class="wavy-line"></i>
+      <i style="--speed: 15; --bg: cyan" class="square"></i>
+    </div>
+  </div>
+  <div class="congrats">
+    <h2 class="congrats__title">Congratulations!</h2>
+    <p class="congrats__text"></p>
+  </div>
+  <div class="api-bar">
+    <div class="api-bar__container">
+        <div class="api-bar__wrapper">
+        </div>
+    </div>
+</div>
+  <div class="wrapper">
+    <header class="header">
+        <div class="header__container container">
+          <a href="#home"><img src="/assets/img/header/logo.png" alt="Decbase logo" class="header__logo"></a>
+            <nav class="header__nav nav">
+              <input type="checkbox" class="nav__toggle">
+              <div class="nav__hamburger"></div>
+              <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="#home">Home</a></li>
+                <li class="nav__item"><a class="nav__link" href="#project">Project</a></li>
+                <li class="nav__item"><a class="nav__link" href="#services">Services</a></li>
+                <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
+                <li class="nav__item"><a class="nav__link" href="#blog">Blog</a></li>
+                <li class="nav__item"><a class="nav__link" href="#shop">Shop</a></li>
+                <li class="nav__item"><a class="nav__link" href="#contact">Contact</a></li>
+              </ul>
+              <div class="header__actions">
+                <a href="#" class="header__signup">Sign up</a>
+              </div>
+            </nav>
+          </div>
+          <div class="header__progress-bar"></div>
+    </header>
+    <main class="main">
+          <section class="hero" id="home">
+            <div class="hero__container container">
+              <div class="hero__content">
+                <h5 class="hero__subtitle subtitle">Modern interior</h5>
+                <h1 class="hero__title title">Create Your Interior Design.</h1>
+                <p class="hero__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                  veniam, quis nostrud exercitation.
+                </p>
+                <a href="#" class="hero__cta cta">Contact</a>
+              </div>
+      
+              <div class="hero__image-wrapper">
+                <img src="/assets/img/hero/hero-img.png" alt="Hero interior image" class="hero__image left-shift">
+              </div>
+            </div>
+            <img class="hero__decoration" src="./assets/img/hero/decor1.svg" alt="Section decoration">
+          </section>
+          <section class="services" id="services">
+            <div class="services__container container">
+              <h5 class="services__subtitle subtitle">What we do</h5>
+              <h1 class="services__title title">Our Service</h1>
+              <div class="services__tabs">
+                <button type="button" class="services__tab active" data-type="all">All</button>
+                <button type="button" class="services__tab" data-type="interior">Interior design</button>
+                <button type="button" class="services__tab" data-type="architecture">Architecture</button>
+                <button type="button" class="services__tab" data-type="planning">Planning</button>
+              </div>
+              <div class="services__cards"></div>
+            </div>
+            <img class="services__decoration" src="./assets/img/services/decor2.svg" alt="Section decoration">
+          </section>
+          <section class="about" id="about">
+            <div class="about__top container">
+              <div class="about__image">
+                <img src="/assets/img/about/about-first.png" alt="about image" class="right-shift">
+              </div>
+              <div class="about__content">
+                <h5 class="about__subtitle subtitle">About us</h5>
+                <h1 class="about__title title">Interioris The Will <br> of An Epoch Mextreo</h1>
+                <p class="about__text">
+                  There are many variations of passages of Lorem Ipsum available,
+                  but the majority have suffered alteration in some form injected
+                  humour, or randomised words which don't look even slightly
+                  believable.If you are going to use a passage of Lorem Ipsum,
+                  sure there isn't anything embarrassing hidden the middleof text.
+                  All the Lorem Ipsum generators on the Internettend to repeat
+                  predefined chunks as necessary,making this the first true
+                  generator on the Internet.
+                </p>
+                <a href="#" class="about__cta cta">Learn more</a>
+              </div>
+              <img class="about__decoration_first" src="./assets/img/about/decor3.svg" alt="Section decoration">
+            </div>
+            <div class="about__bottom container">
+              <div class="about__content">
+                <h5 class="about__title about__title_20">20</h5>
+                <h1 class="about__title title">Years Of Successful Working<br>The Market</h1>
+                <a href="#" class="about__cta cta">Read more</a>
+              </div>
+              <div class="about__image">
+                <img src="/assets/img/about/about-second.png" alt="about market" class="left-shift">
+              </div>
+            </div>
+          </section>
+          <section class="achievements" id="projects">
+            <div class="achievements__container container">
+              <h2 class="achievements__title achievements__title_work title">
+                3000+ Completed Work <br> Which WE have Successfully Done
+              </h2>
+    
+              <div class="achievements__cards">
+                <div class="achievements__card">
+                  <h3 class="achievements__card-title">980</h3>
+                  <p class="achievements__card-text">Projects</p>
+                </div>
+                <div class="achievements__card">
+                  <h3 class="achievements__card-title">520</h3>
+                  <p class="achievements__card-text">Happy Clients</p>
+                </div>
+                <div class="achievements__card">
+                  <h3 class="achievements__card-title">330</h3>
+                  <p class="achievements__card-text">Winners</p>
+                </div>
+                <div class="achievements__card">
+                  <h3 class="achievements__card-title">120</h3>
+                  <p class="achievements__card-text">Awards</p>
+                </div>
+              </div>
+            </div>
+            <img class="achievements__decoration" src="./assets/img/achievements/decor5.svg" alt="Section decoration">
+          </section>
+          <section  class="testimonials">
+            <div class="testimonials__container container">
+              <div class="testimonials__titles">
+                <h5 class="testimonials__subtitle subtitle">testimonials</h5>
+                <h1 class="testimonials__title title"> Client say about us </h1>
+              </div>
+              <div class="testimonials__swiper swiper">
+                <div class="testimonials__btn swiper-button-prev"></div>
+                <div class="testimonials__btn swiper-button-next"></div>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="testimonials__item">
+                      <img src="./assets/img/testimonials/client-1.png" alt="avatar" class="testimonials__img">
+                      <div class="testimonials__user-info">
+                          <span class="testimonials__name">Louis Saville</span>
+                          <span> &#47;</span>
+                          <span class="testimonials__position">
+                            CEO at Google
+                          </span>
+                        <div class="testimonials__marks">&#8217;&#8217;</div>
+                      </div>
+                      <p class="testimonials__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing 
+                        elit, sed do eiusmod tempor incididunt ut labore
+                        et dolore magna aliqua.
+                      </p>
+                    </div>   
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="testimonials__item">
+                      <img src="./assets/img/testimonials/client-2.png" alt="avatar" class="testimonials__img">
+                      <div class="testimonials__user-info">
+                          <span class="testimonials__name">Rekha Vara</span>
+                          <span> &#47;</span>
+                          <span class="testimonials__position">
+                            Manager at Nike
+                          </span>
+                        <div class="testimonials__marks">&#8217;&#8217;</div>
+                      </div>
+                      <p class="testimonials__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing 
+                        elit, sed do eiusmod tempor incididunt ut labore
+                        et dolore magna aliqua.
+                      </p>
+                    </div>   
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="testimonials__item">
+                      <img src="./assets/img/testimonials/man-gcf71159da_640.jpg" alt="avatar" class="testimonials__img">
+                      <div class="testimonials__user-info">
+                          <span class="testimonials__name">Ervin Howell</span>
+                          <span> &#47;</span>
+                          <span class="testimonials__position">
+                            CEO at Google
+                          </span>
+                        <div class="testimonials__marks">&#8217;&#8217;</div>
+                      </div>
+                      <p class="testimonials__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing 
+                        elit, sed do eiusmod tempor incididunt ut labore
+                        et dolore magna aliqua.
+                      </p>
+                    </div>   
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="testimonials__item">
+                      <img src="./assets/img/testimonials/woman-g0184f14f1_640.jpg" alt="avatar" class="testimonials__img">
+                      <div class="testimonials__user-info">
+                          <span class="testimonials__name">Leane Graham</span>
+                          <span> &#47;</span>
+                          <span class="testimonials__position">
+                            CEO at Google
+                          </span>
+                        <div class="testimonials__marks">&#8217;&#8217;</div>
+                      </div>
+                      <p class="testimonials__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing 
+                        elit, sed do eiusmod tempor incididunt ut labore
+                        et dolore magna aliqua.
+                      </p>
+                    </div>   
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="testimonials__item" >
+                      <img src="./assets/img/testimonials/man-gf2949285d_640.jpg" alt="avatar" class="testimonials__img">
+                      <div class="testimonials__user-info">
+                          <span class="testimonials__name">Kurtis Weissnat</span>
+                          <span> &#47;</span>
+                          <span class="testimonials__position">
+                            CEO at Google
+                          </span>
+                        <div class="testimonials__marks">&#8217;&#8217;</div>
+                      </div>
+                      <p class="testimonials__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing 
+                        elit, sed do eiusmod tempor incididunt ut labore
+                        et dolore magna aliqua.
+                      </p>
+                    </div>   
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="testimonials__item">
+                      <img src="./assets/img/testimonials/woman-ga9cf65075_640.jpg" alt="avatar" class="testimonials__img">
+                      <div class="testimonials__user-info">
+                          <span class="testimonials__name">Laura Bauch</span>
+                          <span> &#47;</span>
+                          <span class="testimonials__position">
+                            CEO at Google
+                          </span>
+                        <div class="testimonials__marks">&#8217;&#8217;</div>
+                      </div>
+                      <p class="testimonials__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing 
+                        elit, sed do eiusmod tempor incididunt ut labore
+                        et dolore magna aliqua.
+                      </p>
+                    </div>   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="news" id="blog">
+            <div class="news__container container">
+              <div class="news__titles">
+                <h5 class="news__subtitle subtitle">Latest news</h5>
+                <h1 class="news__title title">From Our Blog</h1>
+              </div>
+              <div class="news__items">
+                <div class="news__item news__item_hidden">
+                  <div class="news__image">
+                    <img src="./assets/img/news/wardrobe.png" alt="News picture" class="left-shift">
+                  </div>
+      
+                  <h3 class="news__item-title">2020 Interior Design Trends</h3>
+                  <p class="news__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    incididunt ut labore et dolore magna aliqua.
+                  </p>
+                  <a href="#" class="news__cta cta">Continue reading...</a>
+                </div>
+      
+                <div class="news__item news__item_hidden">
+                  <div class="news__image">
+                    <img src="./assets/img/news/living-room.png" alt="News picture" class="left-shift">
+                  </div>
+      
+                  <h3 class="news__item-title">28 Notable Products at ARC Design</h3>
+                  <p class="news__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    incididunt ut labore et dolore magna aliqua.
+                  </p>
+                  <a href="#" class="news__cta cta">Continue reading...</a>
+                </div>
+              </div>
+            </div>
+            <img class="news__decoration" src="./assets/img/news/decor6.svg" alt="Section decoration">
+          </section>
+          <section class="designs" id="shop">
+            <div class="designs__container container">
+              <h1 class="designs__title title">Works We Are Proud Of</h1>
+              <h5 class="designs__subtitle subtitle">These are just a few of our inspiring designs:</h5>
+              <div class="designs__grid"></div>
+              <div class="designs__error-container"></div>
+            </div>
+          </section>
+          <section class="contact" id="contact">
+            <div class="contact__container container">
+                <h1 class="contact__title title">Don't forget to sign up</h1>
+                <span class="contact__underline"></span>
+                <p class="contact__text">
+                  Find out early about all upcoming promotions and new product releases with <br>
+                  our newsletter.
+                </p>
+              <form action="#" method="post" class="contact__form">
+                <fieldset class="contact__fieldset">
+                  <div class="contact__item">
+                    <label for="name-input" class="contact__label" id="name-error">
+                      Please, use only Latin letters without numbers or spaces. First letter must be capitalized.
+                    </label>
+                    <input type="text" name="name" id="name-input" class="contact__input" placeholder="Enter your name..."
+                      required>
+                  </div>
+      
+                  <div class="contact__item">
+                    <label for="surname-input" class="contact__label" id="surname-error">
+                      Please, use only Latin letters without numbers or spaces. First letter must be capitalized.
+                    </label>
+                    <input type="text" name="surname" id="surname-input" class="contact__input"
+                      placeholder="Enter your surname..." required>
+                  </div>
+                </fieldset>
+      
+                <div class="contact__item">
+                  <label for="email-input" class="contact__label" id="email-error">
+                    Please, enter a valid e-mail address.
+                  </label>
+                  <input type="email" name="email" id="email-input" class="contact__input" placeholder="Enter your e-mail..."
+                    required>
+                </div>
+                <button type="submit" class="contact__submit cta">Subscribe</button>
+              </form>
+            </div>
+            <img class="contact__decoration" src="./assets/img/contact/decor7.svg" alt="Section decoration">
+          </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__content">
+          <div class="footer__logo-container">
+            <a href="#home" class="footer__logo">
+              <img src="./assets/img/header/logo.png" alt="Logo">
+            </a>
+            <p class="footer__slogan">
+              But I must explain to you all this mistaken idea of denouncing pleasure.
+            </p>
+          </div>
+          <nav class="footer__nav">
+            <div class="footer__nav-item">
+              <h2 class="footer__nav-title footer-title">Quick Links</h2>
+              <ul class="footer__nav-list">
+                <li><a href="#">About Our Company</a></li>
+                <li><a href="#">Services WE provide</a></li>
+                <li><a href="#">Career & Opportunity</a></li>
+                <li><a href="#">Privacy & policy</a></li>
+                <li><a href="#">Contact US</a></li>
+              </ul>
+            </div>
+            <div class="footer__nav-item">
+              <h2 class="footer__nav-title footer-title">Company</h2>
+              <ul class="footer__nav-list">
+                <li><a href="#">About Company</a></li>
+                <li><a href="#">Our Testimonials</a></li>
+                <li><a href="#">Latest News</a></li>
+                <li><a href="#">Our mission</a></li>
+                <li><a href="#">Get a free Quot</a></li>
+              </ul>
+            </div>
+            <div class="footer__nav-item">
+              <h2 class="footer__nav-title footer-title">Contact us</h2>
+              <ul class="footer__nav-list">
+                <li><a href="#">Sagrada Familia, Herba</a></li>
+                <li><a href="#">Street Front USA</a></li>
+                <li><a href="mailto:brandoxide@gmail.com">brandoxide@gmail.com</a></li>
+                <li><a href="tel:002-568423591">002-568423591</a></li>
+              </ul>
+            </div>
+          </nav>
+          <div class="footer__socials-wrapper">
+            <h2 class="footer__nav-title footer-title">Follow Us</h2>
+            <div class="footer__socials">
+              <a href="https://www.facebook.com/" target="_blank" class="footer__socials-link">
+                <img class="socials__logo" src="./assets/img/footer/fb.svg" alt="Facebook icon">
+              </a>
+              <a href="https://twitter.com/" target="_blank" class="footer__socials-link">
+                <img class="socials__logo" src="./assets/img/footer/twitter.svg" alt="Twitter icon">
+              </a>
+              <a href="https://www.instagram.com/" target="_blank" class="footer__socials-link">
+                <img class="socials__logo" src="./assets/img/footer/instagram.svg" alt="Instagram icon">
+              </a>
+              <a href="https://www.linkedin.com/" target="_blank" class="footer__socials-link">
+                <img class="socials__logo" src="./assets/img/footer/linked-in.svg" alt="LinkedIn icon">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="footer__copyright">Copyright&nbsp;&copy;&nbsp;<span class="footer__copyright_year"></span> <span class="footer__copyright_green">Brandoxide.</span>all rights reserved.</p>
+    </footer>
+    <div class="presence">
+      <div class="presence__content">
+        <p class="presence__text">Are you still here? &#128546;</p>
+        <button class="presence__btn" type="button">Confirm</button>
+      </div>
+    </div>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/swiper@9.1.1/swiper-bundle.js"></script>
+    <script type="module" src="./assets/js/main.js"></script>
+  </div>
+</body>
+</html>
