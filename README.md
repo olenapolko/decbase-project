@@ -9,6 +9,11 @@ Below the nav section there is a progress-bar tracking user's scrolling progress
 ## Services
 The ‚Services‘ section, is responsible for fetching data from API, organizing and filtering the data into categories, and dynamically populating a webpage with service cards based on user interactions with a service menu. A request for comments data is limited to 20 entries.
 
+* The getServices() function uses the fetch() function to make an HTTP GET request to get comments.
+* The response received from the API is in JSON format, containing an array of comment objects.
+* The fetched data is then organized into three categories: interior, architecture, and planning based on the postId property.
+* The fillServices() function fills the service cards on the page based on the filtered data.
+
 ## Presence Check
 If the user is inactive for 1 minute, a modal will appear asking "Are you still there?" with a button. If the user clicks the button within a certain timeframe, the modal closes and the countdown to close the page starts again. However, if the user does not interact with the modal within 10 seconds, the program imitates automatically closing the window.
 
