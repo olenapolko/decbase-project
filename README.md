@@ -15,7 +15,7 @@ The ‚Services‘ section, is responsible for fetching data from API (https://j
 * The fillServices() function fills the service cards on the page based on the filtered data.
 
 ## Presence Check
-If the user is inactive for 1 minute, a modal will appear asking "Are you still there?" with a button. If the user clicks the button within a certain timeframe, the modal closes and the countdown to close the page starts again. However, if the user does not interact with the modal within 10 seconds, the program imitates automatically closing the window.
+If the user is inactive for 1 minute, a modal will appear asking "Are you still there?" with a button. If the user clicks the button within a certain timeframe, the modal closes and the countdown to close the page starts again. However, if the user does not interact with the modal within 10 seconds, the program imitates automatically closing the window. The alert "Window was closed" appears, along with a corresponding message in the console.
 
 ## Testimonials
 In the ‚Testimonials‘ section, the Swiper.js library is used to create a slider. The switching between slides is smooth and cyclic.
