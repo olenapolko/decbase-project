@@ -7,7 +7,7 @@ Page loading starts with a visually appealing preloader animation with 7 rotatin
 Below the nav section there is a progress-bar tracking user's scrolling progress on a web page and updating its width accordingly. When the user scrolls the page, the progress bar fills up proportionally to how far the user has scrolled down the page.
 
 ## Services
-The ‚Services‘ section, is responsible for fetching data from API, organizing and filtering the data into categories, and dynamically populating a webpage with service cards based on user interactions with a service menu. A request for comments data is limited to 20 entries.
+The ‚Services‘ section, is responsible for fetching data from API (https://jsonplaceholder.typicode.com/), organizing and filtering the data into categories, and dynamically populating a webpage with service cards based on user interactions with a service menu. A request for comments data is limited to 20 entries.
 
 * The getServices() function uses the fetch() function to make an HTTP GET request to get comments.
 * The response received from the API is in JSON format, containing an array of comment objects.
@@ -21,7 +21,7 @@ If the user is inactive for 1 minute, a modal will appear asking "Are you still 
 In the ‚Testimonials‘ section, the Swiper.js library is used to create a slider. The switching between slides is smooth and cyclic.
 
 ## Designs
-The ‚Designs‘ section is responsible for fetching random interior design images from the Unsplash API and displaying them on a web page, along with descriptions and locations of the photos.
+The ‚Designs‘ section is responsible for fetching random interior design images from the 'Unsplash API' and displaying them on a web page, along with descriptions and locations of the photos.
 
 ## Achievements
 The ‚Achievements‘ section displays the cards which respond on hovering, change color and size.
