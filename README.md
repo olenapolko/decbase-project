@@ -1,5 +1,7 @@
 # Decbase Landing Page
+To see a live demo of my project, visit https://olenapolko.github.io/decbase-project/
 
+# Project description:
 ## Welcoming Animation
 Page loading starts with a visually appealing preloader animation with 7 rotating circles that move up and down for 5 seconds.
 
@@ -21,7 +23,7 @@ If the user is inactive for 1 minute, a modal will appear asking "Are you still 
 In the ‚Testimonials‘ section, the Swiper.js library is used to create a slider. The switching between slides is smooth and cyclic.
 
 ## Designs
-The ‚Designs‘ section is responsible for fetching random interior design images from the 'Unsplash API' and displaying them on a web page, along with descriptions and locations of the photos.
+The ‚Designs‘ section is responsible for fetching random interior design images from the 'Unsplash API' (https://unsplash.com/developers) and displaying them on a web page, along with descriptions and locations of the photos.
 
 ## Achievements
 The ‚Achievements‘ section displays the cards which respond on hovering, change color and size.
